@@ -1,0 +1,55 @@
+#About {
+  background-color: #c9e7e9;
+}
+
+#Announcement {
+  background: url("../images/pattern.png");
+  min-height: 100px;
+}
+
+#Registration {
+ background-color: #b7c9d3;
+}
+
+#Map {
+
+}
+
+.logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about{
+  font-family: 'Kelson Sans',Helvetica,Arial,sans-serif;
+  padding-left: emCalc(38);
+  line-height: 1.5;
+}
+
+.about-title {
+  color: #ffffff;
+  font-size: emCalc(39);
+  font-weight: 100 !important;
+}
+
+.about-description {
+  color: #62979b;
+  font-size: emCalc(18);
+  font-weight: bold !important;
+}
+
+.about-details {
+  color: #62979b;
+  font-size: emCalc(11);
+  padding-bottom: emCalc(70);
+}
+
+.floating-label {
+  background-color: #1d3556;
+  padding: emCalc(14);
+  color: #fff;
+  font-family: 'Kelson Sans',Helvetica,Arial,sans-serif;
+  font-size: emCalc(11);
+  font-weight: 100 !important;
+}
