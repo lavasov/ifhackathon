@@ -27,6 +27,13 @@
         <img src="images/logo.png" class="logo">
       </div>
     </div>
+    <div class="row">
+      <div class="large-2 columns large-centered">
+        <div class="nav_bars">
+          <a href="#Announcement">ВНИЗ</a>
+        </div>
+      </div>
+    </div>
   </section>
 
   <section id="Announcement">
@@ -35,7 +42,15 @@
     </div>
     <div class="row">
       <div class="large-12 columns">
-        2
+        <p>2</p>
+        <p>2</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="large-2 columns large-centered">
+        <div id="second_nav_bar" class="nav_bars">
+          <a href="#Registration">ВНИЗ</a>
+        </div>
       </div>
     </div>
   </section>
@@ -49,18 +64,42 @@
         3
       </div>
     </div>
-  </section>
-
-  <section id="Map">
-    <div class="right floating-label">
-      ЛОКАЦІЯ
-    </div>
     <div class="row">
-      <div class="large-12 columns">
-        Map
+      <div class="large-2 columns large-centered">
+        <div id="third_nav_bar" class="nav_bars">
+          <a href="#Map">ВНИЗ</a>
+        </div>
       </div>
     </div>
   </section>
+
+  <section id="Map">
+    <div class="right floating-label" id="map_title">
+      ЛОКАЦІЯ
+    </div>
+    <div id="map"></div>
+
+
+    <div id="map-data">
+      <p itemprop="address" itemscope itemtype="http://data-vocabulary.org/Address">
+        <b>Адреса:</b> вул. Січових Стрільців, 34
+      </p>
+      <p>
+        <b>Електропошта:</b> <a itemprop=email href="mailto:hackhaton@webmil.eu">hackhaton@webmil.eu</a>
+      </p>
+    </div>
+
+    <div id="fourth_nav_bar_holder">
+      <div id="fourth_nav_bar" class="nav_bars">
+        <a href="#About">ВГОРУ</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© IF HAKATHON 2013.  <span>All rights reserved.</span></p>
+    <a href="http://webmil.eu"><img src="images/footer_logo.jpg"></a>
+  </footer>
 
   <script>
   document.write('<script src=' +
@@ -104,5 +143,7 @@
   <script>
     $(document).foundation();
   </script>
+  <script src="http://maps.googleapis.com/maps/api/js?sensor=true"></script>
+  <script src="javascripts/google_maps.js"></script>
 </body>
 </html>

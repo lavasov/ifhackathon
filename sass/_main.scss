@@ -1,5 +1,6 @@
 #About {
   background-color: #c9e7e9;
+  position: relative;
 }
 
 #Announcement {
@@ -12,7 +13,7 @@
 }
 
 #Map {
-
+  position: relative;
 }
 
 .logo {
@@ -22,7 +23,6 @@
 }
 
 .about{
-  font-family: 'Kelson Sans',Helvetica,Arial,sans-serif;
   padding-left: emCalc(38);
   line-height: 1.5;
 }
@@ -49,7 +49,95 @@
   background-color: #1d3556;
   padding: emCalc(14);
   color: #fff;
-  font-family: 'Kelson Sans',Helvetica,Arial,sans-serif;
   font-size: emCalc(11);
   font-weight: 100 !important;
+}
+
+.nav_bars {
+  width: 71px;
+  height: 48px;
+  background:url('../images/nav_buttons.png');
+  margin: 0 auto;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 48px;
+    a {
+      color: #fff;
+      font-size: emCalc(11);
+      font-weight: 100 !important;
+    }
+}
+
+#second_nav_bar {
+  background-position: 0 -48px;
+}
+
+#third_nav_bar {
+  background-position: 0 -96px;
+}
+
+#fourth_nav_bar_holder {
+  z-index: 9999;
+  bottom: 0px;
+  position: absolute;
+  left: 50%
+}
+
+#fourth_nav_bar {
+  height: 68px;
+  background-position: 0 -144px;
+  line-height: 88px;
+    a {
+      color: #000;
+    }
+
+  position: relative;
+  left: -50%;
+}
+
+#map_title {
+  position: absolute;
+  right: 0px;
+  z-index: 9999;
+}
+
+#map {
+  min-height: 500px;
+  img {
+    max-width: none;
+  }
+}
+
+#map-data {
+  position: absolute;
+  background-color: #ebe8b4;
+  padding: emCalc(20);
+  // width: 200px;
+  right: emCalc(45);
+  top: emCalc(60);
+  p {
+    margin: 0;
+  }
+}
+
+footer {
+  background-color: #ebe8b4;
+  position: relative;
+  height: 39px;
+
+  p {
+    padding-left: emCalc(14);
+    margin: 0;
+    padding-top: 11px;
+    span {
+      font-weight: 100 !important;
+    }
+  }
+  a {
+    position: absolute;
+    right: 0;
+    top: 0;
+    // float: right;
+  }
+
 }
