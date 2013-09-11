@@ -14,7 +14,7 @@
 </head>
 <body>
 
-  <section id="About">
+  <section id="About" data-slide="1">
     <div class="right floating-label">
       ПРО ПРОЕКТ
     </div>
@@ -31,13 +31,13 @@
     <div class="row">
       <div class="large-2 columns large-centered">
         <div class="nav_bars">
-          <a href="#Announcement">ВНИЗ</a>
+          <a href="#Announcement" class="navlink" data-slide="2">ВНИЗ</a>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="Announcement">
+  <section id="Announcement" data-slide="2">
     <div class="right floating-label">
       ОГОЛОШЕННЯ
     </div>
@@ -77,13 +77,13 @@
     <div class="row">
       <div class="large-2 columns large-centered">
         <div id="second_nav_bar" class="nav_bars">
-          <a href="#Registration">ВНИЗ</a>
+          <a href="#Registration" class="navlink" data-slide="3">ВНИЗ</a>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="Registration">
+  <section id="Registration" data-slide="3">
     <div class="right floating-label">
       РЕЄСТРАЦІЯ
     </div>
@@ -95,13 +95,13 @@
     <div class="row">
       <div class="large-2 columns large-centered">
         <div id="third_nav_bar" class="nav_bars">
-          <a href="#Map">ВНИЗ</a>
+          <a href="#Map" class="navlink" data-slide="4">ВНИЗ</a>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="Map">
+  <section id="Map" data-slide="4">
     <div class="right floating-label" id="map_title">
       ЛОКАЦІЯ
     </div>
@@ -119,7 +119,7 @@
 
     <div id="fourth_nav_bar_holder">
       <div id="fourth_nav_bar" class="nav_bars">
-        <a href="#About">ВГОРУ</a>
+        <a href="#About" class="navlink" data-slide="1">ВГОРУ</a>
       </div>
     </div>
   </section>
@@ -135,6 +135,7 @@
   '.js><\/script>')
   </script>
 
+  <script src="javascripts/vendor/jquery.js"></script>
   <script src="javascripts/foundation/foundation.js"></script>
 
   <script src="javascripts/foundation/foundation.abide.js"></script>
@@ -173,6 +174,8 @@
   </script>
   <script src="http://maps.googleapis.com/maps/api/js?sensor=true"></script>
   <script src="javascripts/countdown.js"></script>
+  <script src="javascripts/jquery.easing.js"></script>
+  <script src="javascripts/smooth_scroll.js"></script>
   <script src="javascripts/google_maps.js"></script>
 </body>
 </html>

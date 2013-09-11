@@ -8,7 +8,6 @@ $(document).ready(function(){
   // get tag element
   var countdown = $('#countdown_container');
   // update the tag with id "countdown" every 1 second
-    console.log(countdown);
   setInterval(function () {
 
       // find the amount of "seconds" between now and target
