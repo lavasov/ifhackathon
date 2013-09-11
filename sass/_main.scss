@@ -141,3 +141,67 @@ footer {
   }
 
 }
+
+
+.announcement_title {
+  font-family: 'metropolis_1920regular',"Helvetica Neue", "Helvetica",Arial,sans-serif;
+  color: #fff;
+  font-size: emCalc(85);
+  text-align: center;
+}
+
+#time_left_label {
+  font-size: emCalc(24);
+  color: #c02f34;
+  text-align: center;
+  font-weight: 100 !important;
+}
+
+.blue_text {
+  color: #1d3556;
+  font-weight: bold;
+  text-align: center;
+  font-size: emCalc(17);
+}
+
+#announcement_highlight {
+  color: #fff;
+  font-weight: 100;
+  text-align: center;
+  font-size: emCalc(40);
+  margin: 0;
+}
+
+#announcement_details {
+  font-size: emCalc(12);
+  font-weight: normal;
+}
+
+#countdown_container {
+  font-family: 'metropolis_1920regular',"Helvetica Neue", "Helvetica",Arial,sans-serif;
+  color: #fff;
+  font-size: emCalc(85);
+  text-align: center;
+    span {
+      text-align: center;
+      display: inline-block;
+      img {
+        vertical-align: middle;
+        margin: 0 14px 0 6px;
+      }
+      i {
+        display: block;
+        color: #1d3556;
+        font-family: 'Kelson Sans',"Helvetica Neue", "Helvetica",Arial,sans-serif;
+        font-size: 0.2em;
+        text-align: left;
+      }
+    }
+}
+
+.underlined {
+  color: #fff;
+  font-size: emCalc(4);
+  text-align: center;
+  padding: emCalc(80) 0;
+}

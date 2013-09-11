@@ -7381,3 +7381,76 @@ footer a {
   right: 0;
   top: 0;
 }
+
+/* line 146, ../sass/_main.scss */
+.announcement_title {
+  font-family: 'metropolis_1920regular',"Helvetica Neue", "Helvetica",Arial,sans-serif;
+  color: #fff;
+  font-size: 5.3125em;
+  text-align: center;
+}
+
+/* line 153, ../sass/_main.scss */
+#time_left_label {
+  font-size: 1.5em;
+  color: #c02f34;
+  text-align: center;
+  font-weight: 100 !important;
+}
+
+/* line 160, ../sass/_main.scss */
+.blue_text {
+  color: #1d3556;
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.0625em;
+}
+
+/* line 167, ../sass/_main.scss */
+#announcement_highlight {
+  color: #fff;
+  font-weight: 100;
+  text-align: center;
+  font-size: 2.5em;
+  margin: 0;
+}
+
+/* line 175, ../sass/_main.scss */
+#announcement_details {
+  font-size: 0.75em;
+  font-weight: normal;
+}
+
+/* line 180, ../sass/_main.scss */
+#countdown_container {
+  font-family: 'metropolis_1920regular',"Helvetica Neue", "Helvetica",Arial,sans-serif;
+  color: #fff;
+  font-size: 5.3125em;
+  text-align: center;
+}
+/* line 185, ../sass/_main.scss */
+#countdown_container span {
+  text-align: center;
+  display: inline-block;
+}
+/* line 188, ../sass/_main.scss */
+#countdown_container span img {
+  vertical-align: middle;
+  margin: 0 14px 0 6px;
+}
+/* line 192, ../sass/_main.scss */
+#countdown_container span i {
+  display: block;
+  color: #1d3556;
+  font-family: 'Kelson Sans',"Helvetica Neue", "Helvetica",Arial,sans-serif;
+  font-size: 0.2em;
+  text-align: left;
+}
+
+/* line 202, ../sass/_main.scss */
+.underlined {
+  color: #fff;
+  font-size: 0.25em;
+  text-align: center;
+  padding: 5em 0;
+}

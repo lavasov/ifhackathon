@@ -8,6 +8,7 @@
   <meta name="viewport" content="width=device-width">
   <title>IF HAKATHON</title>
   <link rel="stylesheet" href="fonts/kelson/kelson.css">
+  <link rel="stylesheet" href="fonts/metropolis/metropolis1920.css">
   <link rel="stylesheet" href="stylesheets/app.css">
   <script src="javascripts/vendor/custom.modernizr.js"></script>
 </head>
@@ -41,9 +42,36 @@
       ОГОЛОШЕННЯ
     </div>
     <div class="row">
-      <div class="large-12 columns">
-        <p>2</p>
-        <p>2</p>
+      <div class="large-6 columns large-centered">
+        <h3 class="announcement_title">IF HAKATHON</h3>
+        <img src="images/2013label.png">
+        <p class="blue_text">
+          This is Photoshop's version  of Lorem Ips Proin gravida  velit auctor aliquet. Aenean sollicitжudin, lorem quis bibendum auctor, nisi elit consequat ipsum.
+        </p>
+        <p id="announcement_highlight">
+          This is Photoshop's version
+        </p>
+        <p class="blue_text" id="announcement_details">
+          This is Photoshop's version  of Lorem Ips Proin gravida  velit auctor aliquet. Aenean sollicitжudin, lorem quis bibendum auctor, nisi elit consequat ipsum.
+        </p>
+        <img src="images/clock.png">
+        <p id="time_left_label">ДО ПОЧАТКУ ХАКАТОНУ ЗАЛИШИЛОСЬ</p>
+        <div id="countdown_container"></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="large-12 columns large-centered">
+        <div class="underlined">
+          <u>| | | | | | | | | | | | | | | | | | | | | | | | | | | </u>
+          | | | | | | | | | | | | | | | | | | | | | | | | | | |
+          <span><img src="images/megaphone.png"></span>
+          <u>| | | | | | | | | | | | | | | | | | | | | | | | | | | </u>
+          | | | | | | | | | | | | | | | | | | | | | | | | | | |
+          <span><img src="images/book.png"></span>
+          <u>| | | | | | | | | | | | | | | | | | | | | | | | | | | </u>
+          | | | | | | | | | | | | | | | | | | | | | | | | | | |
+          <span><img src="images/bus.png"></span>
+        </div>
       </div>
     </div>
     <div class="row">
@@ -144,6 +172,7 @@
     $(document).foundation();
   </script>
   <script src="http://maps.googleapis.com/maps/api/js?sensor=true"></script>
+  <script src="javascripts/countdown.js"></script>
   <script src="javascripts/google_maps.js"></script>
 </body>
 </html>
