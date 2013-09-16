@@ -7217,63 +7217,63 @@ a.th {
   max-width: 800px;
 }
 
-/* line 1, ../sass/_main.scss */
+/* line 3, ../sass/_main.scss */
 #About {
   background-color: #c9e7e9;
   position: relative;
 }
 
-/* line 6, ../sass/_main.scss */
+/* line 8, ../sass/_main.scss */
 #Announcement {
   background: url("../images/pattern.png");
   min-height: 100px;
 }
 
-/* line 11, ../sass/_main.scss */
+/* line 13, ../sass/_main.scss */
 #Registration {
   background-color: #b7c9d3;
 }
 
-/* line 15, ../sass/_main.scss */
+/* line 17, ../sass/_main.scss */
 #Map {
   position: relative;
 }
 
-/* line 19, ../sass/_main.scss */
+/* line 21, ../sass/_main.scss */
 .logo {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* line 25, ../sass/_main.scss */
+/* line 27, ../sass/_main.scss */
 .about {
   padding-left: 2.375em;
   line-height: 1.5;
 }
 
-/* line 30, ../sass/_main.scss */
+/* line 32, ../sass/_main.scss */
 .about-title {
   color: #ffffff;
   font-size: 2.4375em;
   font-weight: 100 !important;
 }
 
-/* line 36, ../sass/_main.scss */
+/* line 38, ../sass/_main.scss */
 .about-description {
   color: #62979b;
   font-size: 1.125em;
   font-weight: bold !important;
 }
 
-/* line 42, ../sass/_main.scss */
+/* line 44, ../sass/_main.scss */
 .about-details {
   color: #62979b;
   font-size: 0.6875em;
   padding-bottom: 4.375em;
 }
 
-/* line 48, ../sass/_main.scss */
+/* line 50, ../sass/_main.scss */
 .floating-label {
   background-color: #1d3556;
   padding: 0.875em;
@@ -7282,7 +7282,7 @@ a.th {
   font-weight: 100 !important;
 }
 
-/* line 56, ../sass/_main.scss */
+/* line 58, ../sass/_main.scss */
 .nav_bars {
   width: 71px;
   height: 48px;
@@ -7292,24 +7292,24 @@ a.th {
   vertical-align: middle;
   line-height: 48px;
 }
-/* line 64, ../sass/_main.scss */
+/* line 66, ../sass/_main.scss */
 .nav_bars a {
   color: #fff;
   font-size: 0.6875em;
   font-weight: 100 !important;
 }
 
-/* line 71, ../sass/_main.scss */
+/* line 73, ../sass/_main.scss */
 #second_nav_bar {
   background-position: 0 -48px;
 }
 
-/* line 75, ../sass/_main.scss */
+/* line 77, ../sass/_main.scss */
 #third_nav_bar {
   background-position: 0 -96px;
 }
 
-/* line 79, ../sass/_main.scss */
+/* line 81, ../sass/_main.scss */
 #fourth_nav_bar_holder {
   z-index: 9999;
   bottom: 0px;
@@ -7317,7 +7317,7 @@ a.th {
   left: 50%;
 }
 
-/* line 86, ../sass/_main.scss */
+/* line 88, ../sass/_main.scss */
 #fourth_nav_bar {
   height: 68px;
   background-position: 0 -144px;
@@ -7325,64 +7325,107 @@ a.th {
   position: relative;
   left: -50%;
 }
-/* line 90, ../sass/_main.scss */
+/* line 92, ../sass/_main.scss */
 #fourth_nav_bar a {
   color: #000;
 }
 
-/* line 98, ../sass/_main.scss */
+/* line 100, ../sass/_main.scss */
 #map_title {
   position: absolute;
   right: 0px;
   z-index: 9999;
 }
 
-/* line 104, ../sass/_main.scss */
+/* line 106, ../sass/_main.scss */
 #map {
   min-height: 500px;
 }
-/* line 106, ../sass/_main.scss */
+/* line 108, ../sass/_main.scss */
 #map img {
   max-width: none;
 }
 
-/* line 111, ../sass/_main.scss */
+/* line 113, ../sass/_main.scss */
+.bordered {
+  display: block;
+  position: absolute !important;
+  top: 43%;
+  margin-top: -15x;
+  height: 29px;
+  overflow: auto;
+}
+
+/* line 129, ../sass/_main.scss */
+#bordered_left {
+  left: -5px;
+}
+
+/* line 132, ../sass/_main.scss */
+#bordered_right {
+  right: -5px;
+}
+
+/* line 136, ../sass/_main.scss */
 #map-data {
-  position: absolute;
-  background-color: #ebe8b4;
-  padding: 1.25em;
-  right: 2.8125em;
+  background-color: #e5d196;
+  padding: 0.625em;
   top: 3.75em;
 }
-/* line 118, ../sass/_main.scss */
+/* line 137, ../sass/_main.scss */
+#map-data div {
+  padding: 1.8125em;
+  text-align: center;
+  color: #1d3556;
+  border: 1px solid #1d3556;
+  font-size: 1.125em;
+  position: relative;
+}
+/* line 139, ../sass/_main.scss */
+#map-data div p a {
+  font-weight: bold;
+  color: #1d3556;
+}
+/* line 144, ../sass/_main.scss */
+#map-data div #phone {
+  color: #fff;
+  font-weight: 100 !important;
+  font-size: 2.5em;
+  line-height: 1.5;
+}
+/* line 151, ../sass/_main.scss */
+#map-data div #address {
+  font-size: 0.75em;
+}
+/* line 170, ../sass/_main.scss */
 #map-data p {
   margin: 0;
 }
 
-/* line 123, ../sass/_main.scss */
+/* line 175, ../sass/_main.scss */
 footer {
   background-color: #ebe8b4;
   position: relative;
   height: 39px;
 }
-/* line 128, ../sass/_main.scss */
+/* line 180, ../sass/_main.scss */
 footer p {
   padding-left: 0.875em;
   margin: 0;
   padding-top: 11px;
 }
-/* line 132, ../sass/_main.scss */
+/* line 184, ../sass/_main.scss */
 footer p span {
   font-weight: 100 !important;
 }
-/* line 136, ../sass/_main.scss */
+/* line 188, ../sass/_main.scss */
 footer a {
   position: absolute;
   right: 0;
   top: 0;
 }
 
-/* line 146, ../sass/_main.scss */
+/* line 198, ../sass/_main.scss */
 .announcement_title {
   font-family: 'metropolis_1920regular',"Helvetica Neue", "Helvetica",Arial,sans-serif;
   color: #fff;
@@ -7390,7 +7433,7 @@ footer a {
   text-align: center;
 }
 
-/* line 153, ../sass/_main.scss */
+/* line 205, ../sass/_main.scss */
 #time_left_label {
   font-size: 1.5em;
   color: #c02f34;
@@ -7398,47 +7441,40 @@ footer a {
   font-weight: 100 !important;
 }
 
-/* line 160, ../sass/_main.scss */
+/* line 212, ../sass/_main.scss */
 .blue_text {
   color: #1d3556;
-  font-weight: bold;
-  text-align: center;
-  font-size: 1.0625em;
+  font-size: 0.9375em;
 }
 
-/* line 167, ../sass/_main.scss */
+/* line 219, ../sass/_main.scss */
 #announcement_highlight {
   color: #fff;
   font-weight: 100;
   text-align: center;
-  font-size: 2.5em;
+  font-size: 1.875em;
+  letter-spacing: 2px;
   margin: 0;
 }
 
-/* line 175, ../sass/_main.scss */
-#announcement_details {
-  font-size: 0.75em;
-  font-weight: normal;
-}
-
-/* line 180, ../sass/_main.scss */
+/* line 233, ../sass/_main.scss */
 #countdown_container {
   font-family: 'metropolis_1920regular',"Helvetica Neue", "Helvetica",Arial,sans-serif;
   color: #fff;
+  margin-left: 0.25em;
   font-size: 5.3125em;
-  text-align: center;
 }
-/* line 185, ../sass/_main.scss */
+/* line 239, ../sass/_main.scss */
 #countdown_container span {
   text-align: center;
   display: inline-block;
 }
-/* line 188, ../sass/_main.scss */
+/* line 242, ../sass/_main.scss */
 #countdown_container span img {
   vertical-align: middle;
   margin: 0 14px 0 6px;
 }
-/* line 192, ../sass/_main.scss */
+/* line 246, ../sass/_main.scss */
 #countdown_container span i {
   display: block;
   color: #1d3556;
@@ -7447,7 +7483,12 @@ footer a {
   text-align: left;
 }
 
-/* line 202, ../sass/_main.scss */
+/* line 256, ../sass/_main.scss */
+#days {
+  margin-left: 7px;
+}
+
+/* line 260, ../sass/_main.scss */
 .underlined {
   color: #fff;
   font-size: 0.25em;

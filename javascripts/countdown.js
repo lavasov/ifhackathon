@@ -43,7 +43,7 @@ $(document).ready(function(){
       };
 
       // format countdown string + set tag value
-      var text = "<span>" + days + "<img src='images/colon.png'/><i>днів</i></span><span>" + zeroHours + hours + "<img src='images/colon.png'/><i>годин</i></span><span>" + zeroMinutes+minutes + "<img src='images/colon.png'/><i>хвилин</i></span><span>" + zeroSeconds+seconds + "<i>секунд</i></span>";
+      var text = "<span>" + days + "<img src='images/colon.png'/><i id='days'>днів</i></span><span>" + zeroHours + hours + "<img src='images/colon.png'/><i>годин</i></span><span>" + zeroMinutes+minutes + "<img src='images/colon.png'/><i>хвилин</i></span><span>" + zeroSeconds+seconds + "<i>секунд</i></span>";
       countdown.html(text)
 
   }, 1000);

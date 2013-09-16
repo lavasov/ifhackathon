@@ -19,9 +19,11 @@
       ПРО ПРОЕКТ
     </div>
     <div class="column about">
-      <div class="about-title">Привіт, вітаємо!</div>
-      <div class="about-description">Lorem Ipsum. Proin graGIIvda nibh vel vIIlit auctor aliquet Aenean sollicitudin lorem.</div>
-      <div class="about-details">sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus asit amet maurs. Morbi accumsan ipsum velit.</div>
+      <div class="head_texts">
+        <div class="about-title">Всім привіт, раді анонсувати перший IF HAKATHON.</div>
+        <!-- <div class="about-description">Наше місто не є великим ІТ центром і тематичні події відбуваються вкрай рідко, тому ми вирішили зібрати тусовку і гарно розважитись.</div> -->
+<!--         <div class="about-details">sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus asit amet maurs. Morbi accumsan ipsum velit.</div> -->
+      </div>
     </div>
     <div class="row">
       <div class="large-12 columns large-centered">
@@ -42,20 +44,35 @@
       ОГОЛОШЕННЯ
     </div>
     <div class="row">
-      <div class="large-6 columns large-centered">
+      <div class="large-6 columns large-centered" style="text-align: justify;">
         <h3 class="announcement_title">IF HAKATHON</h3>
         <img src="images/2013label.png">
+        <p class="blue_text" style="margin-top: 25px;">
+          Наше місто не є великим ІТ центром і тематичні події відбуваються вкрай рідко, тому ми вирішили зібрати тусовку і гарно розважи-тись.
+        </p>
         <p class="blue_text">
-          This is Photoshop's version  of Lorem Ips Proin gravida  velit auctor aliquet. Aenean sollicitжudin, lorem quis bibendum auctor, nisi elit consequat ipsum.
+          Хакатон в нашому розумінні – це швидше дух DIY і свобода робити будь-що, ніж подія під знаменами спонсорів із широкою ротацією в медіа.
+          Тому забезпечити призовий фонд та славу на телебаченні ми не зможемо, але гарантуємо дружню атмосферу і граний настрій під час події.
+        </p>
+        <p class="blue_text">
+          Цього разу основною, хоча і не обов'язковою темою є <b><i>урбанізм</i></b> та допопмога місту.
+          Якщо ти не розробник, – не біда, можеш допомогти дизайном, версткою або ще якось застосувати свої вміння і продемонструвати результат.
         </p>
         <p id="announcement_highlight">
-          This is Photoshop's version
+          Прийди і покажи на що здатен!
         </p>
-        <p class="blue_text" id="announcement_details">
-          This is Photoshop's version  of Lorem Ips Proin gravida  velit auctor aliquet. Aenean sollicitжudin, lorem quis bibendum auctor, nisi elit consequat ipsum.
+        <p class="blue_text">
+          Чекаємо 27 вересня в офісі Webmill.
+          Сподіваємось IF HAKATHON дасть змогу зробити щось корисне, поділитись досвідом, отримати нові знайомства і просто гарно провести час.
+          Старт та ідеї в п'ятницю, презентація демо в суботу після обіду.
         </p>
         <img src="images/clock.png">
         <p id="time_left_label">ДО ПОЧАТКУ ХАКАТОНУ ЗАЛИШИЛОСЬ</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="large-5 columns large-centered">
         <div id="countdown_container"></div>
       </div>
     </div>
@@ -107,14 +124,27 @@
     </div>
     <div id="map"></div>
 
+    <div style="position:absolute; top: 10px;" class="columns large-12">
+      <div class="row">
 
-    <div id="map-data">
-      <p itemprop="address" itemscope itemtype="http://data-vocabulary.org/Address">
-        <b>Адреса:</b> вул. Січових Стрільців, 34
-      </p>
-      <p>
-        <b>Електропошта:</b> <a itemprop=email href="mailto:hackhaton@webmil.eu">hackhaton@webmil.eu</a>
-      </p>
+              <div id="map-data" class="columns large-5 large-offset-7 small-12">
+                <div>
+                  <span class="bordered" id="bordered_left">
+                    <img src="images/map_ellipse_left.png">
+                  </span>
+                  <span class="bordered" id="bordered_right">
+                    <img src="images/map_ellipse_right.png">
+                  </span>
+                  <p>
+                    <a itemprop=email href="mailto:hackhaton@webmil.eu">HACKHATON@WEBMIL.EU</a>
+                  </p>
+                  <p id="phone" class="hide-for-small">+380 91 934 84 73</p>
+                  <p id="address" itemprop="address" itemscope itemtype="http://data-vocabulary.org/Address">
+                    ВУЛ. СІЧОВИХ СТРІЛЬЦІВ, 34
+                  </p>
+                </div>
+              </div>
+      </div>
     </div>
 
     <div id="fourth_nav_bar_holder">

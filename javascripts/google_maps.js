@@ -30,9 +30,12 @@
         geocoder.geocode( { 'address': 'Івано-Франківськ, Січових Стрільців 34'}, function(results, status){
             if (status == google.maps.GeocoderStatus.OK){
                 map.setCenter(results[0].geometry.location);
+                // map.setCenter(120);
                 var conf ={
                     map: map,
-                    position: results[0].geometry.location};
+                    position: results[0].geometry.location,
+                    icon: 'https://dl.dropboxusercontent.com/u/1189063/marker.png'
+                };
                 var marker = new google.maps.Marker(conf);
             }
         })
