@@ -23,18 +23,20 @@
       <div class="about-description">Lorem Ipsum. Proin graGIIvda nibh vel vIIlit auctor aliquet Aenean sollicitudin lorem.</div>
       <div class="about-details">sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus asit amet maurs. Morbi accumsan ipsum velit.</div>
     </div>
-    <div class="row">
-      <div class="large-12 columns large-centered">
-        <img src="images/logo.png" class="logo">
-      </div>
+
+
+    <div class='logo-wrapper'>
+      <span class='logo-shadow'></span>
+      <img src="images/logo.png" class="logo">
     </div>
-    <div class="row">
-      <div class="large-2 columns large-centered">
-        <div class="nav_bars">
-          <a href="#Announcement" class="navlink" data-slide="2">ВНИЗ</a>
-        </div>
-      </div>
+        
+
     </div>
+    
+    <div class="nav_bars">
+      <a href="#Announcement" class="navlink" data-slide="2">ВНИЗ</a>
+    </div>
+    
   </section>
 
   <section id="Announcement" data-slide="2">
@@ -43,7 +45,7 @@
     </div>
     <div class="row">
       <div class="large-6 columns large-centered">
-        <h3 class="announcement_title">IF HAKATHON</h3>
+        <h3 class="announcement_title">IF HACKATHON</h3>
         <img src="images/2013label.png">
         <p class="blue_text">
           This is Photoshop's version  of Lorem Ips Proin gravida  velit auctor aliquet. Aenean sollicitжudin, lorem quis bibendum auctor, nisi elit consequat ipsum.
@@ -74,60 +76,83 @@
         </div>
       </div>
     </div>
-    <div class="row">
-      <div class="large-2 columns large-centered">
-        <div id="second_nav_bar" class="nav_bars">
-          <a href="#Registration" class="navlink" data-slide="3">ВНИЗ</a>
-        </div>
-      </div>
+
+    <div id="second_nav_bar" class="nav_bars">
+      <a href="#Registration" class="navlink" data-slide="3">ВНИЗ</a>
     </div>
+
   </section>
 
-  <section id="Registration" data-slide="3">
+  <section id="Registration" data-slide="3" class='success'>
     <div class="right floating-label">
       РЕЄСТРАЦІЯ
     </div>
     <div class="row">
       <div class="large-12 columns">
-        3
-      </div>
-    </div>
-    <div class="row">
-      <div class="large-2 columns large-centered">
-        <div id="third_nav_bar" class="nav_bars">
-          <a href="#Map" class="navlink" data-slide="4">ВНИЗ</a>
+        <div class='mackbook'>
+          <div class='screen'>
+
+            <form id="registration" action="https://docs.google.com/forms/d/1uLeAhUhADRwrELx5OIYnupqK9QV1RnAKAQ_Vcjg5lgo/formResponse" method="POST">
+              <input type="text" placeholder="Ім’я" name="entry.1102811695" required >
+              <input type="text" placeholder="Прізвище" name="entry.1377095909" required >
+              <input type="hidden" name="draftResponse" value="[]">
+              <input type="hidden" name="pageHistory" value="0">
+              <input type="email" placeholder="E-mail" name="entry.1795337145" required >
+              <select placeholder="name" name="entry.415535002" required >
+                <option value="Дизайнер">дизайнер</option>
+                <option value="Кодер">кодер</option>
+                <option value="Інше">просто хороша людина</option>
+              </select>
+              <input class="btn-submit" type="submit" value="ЗАРЕЄСТУВАТИСЯ" />
+            </form>
+
+            <div class='success-msg'>
+              <span class='cup'></span>  
+              <h3>ЗАЯВКУ ПРИЙНЯТО</h3>
+              <p>ОЧІКУЙТЕ ПІДТВЕРДЖЕННЯ УЧАСТІ ПО E-MAIL</p>
+            </div>
+
+          </div>
         </div>
       </div>
+    </div>
+
+    <div id="third_nav_bar" class="nav_bars">
+      <a href="#Map" class="navlink" data-slide="4">ВНИЗ</a>
     </div>
   </section>
 
   <section id="Map" data-slide="4">
-    <div class="right floating-label" id="map_title">
-      ЛОКАЦІЯ
-    </div>
-    <div id="map"></div>
+    <div class='map-slide-wrapper'>
+      <div class="right floating-label" id="map_title">
+        ЛОКАЦІЯ
+      </div>
+      <div id="map"></div>
 
 
-    <div id="map-data">
-      <p itemprop="address" itemscope itemtype="http://data-vocabulary.org/Address">
-        <b>Адреса:</b> вул. Січових Стрільців, 34
-      </p>
-      <p>
-        <b>Електропошта:</b> <a itemprop=email href="mailto:hackhaton@webmil.eu">hackhaton@webmil.eu</a>
-      </p>
-    </div>
+      <div id="map-data">
+        <p itemprop="address" itemscope itemtype="http://data-vocabulary.org/Address">
+          <b>Адреса:</b> вул. Січових Стрільців, 34
+        </p>
+        <p>
+          <b>Електропошта:</b> <a itemprop=email href="mailto:hackhaton@webmil.eu">hackhaton@webmil.eu</a>
+        </p>
+      </div>
 
-    <div id="fourth_nav_bar_holder">
       <div id="fourth_nav_bar" class="nav_bars">
         <a href="#About" class="navlink" data-slide="1">ВГОРУ</a>
       </div>
+
     </div>
+
+    <footer>
+      <a href="http://webmil.eu"><img src="images/footer_logo.jpg"></a>
+      <p>© IF HACKATHON 2013. <span>All RIGHTS RESERVED.</span></p>
+    </footer>
+
   </section>
 
-  <footer>
-    <p>© IF HAKATHON 2013.  <span>All rights reserved.</span></p>
-    <a href="http://webmil.eu"><img src="images/footer_logo.jpg"></a>
-  </footer>
+
 
   <script>
   document.write('<script src=' +
@@ -177,5 +202,6 @@
   <script src="javascripts/jquery.easing.js"></script>
   <script src="javascripts/smooth_scroll.js"></script>
   <script src="javascripts/google_maps.js"></script>
+  <script src="javascripts/app.js"></script>
 </body>
 </html>
