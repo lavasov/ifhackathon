@@ -5,11 +5,11 @@
 // 	if (i < 178){
 // 		plus = Math.round(i*170/310) +'px '+i+'px rgb(' +  Math.round(  174 + ( 198 - 174 ) * i / 178  ) +  ',' + Math.round(  207 + ( 226 - 207 ) * i / 178  ) + ',' + Math.round( 210 + ( 228 - 210 ) * i / 178 ) + '), ';
 // 	} else{
-// 		plus = Math.round(i*170/310) +'px '+i+'px rgb(198,226,228), ';	
+// 		plus = Math.round(i*170/310) +'px '+i+'px rgb(198,226,228), ';
 // 	}
 
 // 	shadowstring += plus;
-	
+
 // }
 
 // shadowstring = shadowstring.substr(0, shadowstring.length-2);
@@ -20,6 +20,7 @@
 $(document).foundation();
 
 $('#registration').on('submit', function(event){
+    $('.btn-submit').prop('disabled', true);
     event.preventDefault();
     var values = $(this).serialize();
     var url    = $(this).attr('action');
@@ -34,7 +35,7 @@ $('#registration').on('submit', function(event){
       console.log(textStatus);
     });
     jqxhr.always(function(jqXHR, textStatus, errorThrown){
-      console.log('always');
+      $('#Registration').addClass('success');
     });
 
 });
@@ -61,7 +62,7 @@ $('#registration').on('submit', function(event){
 // 	gradEnd = 178,
 
 // 	coefR = (rEnd - rStart) / gradEnd,
-// 	coefG = (gEnd - gStart) / gradEnd, 
+// 	coefG = (gEnd - gStart) / gradEnd,
 // 	coefB = (bEnd - bStart) / gradEnd;
 
 
@@ -70,13 +71,13 @@ $('#registration').on('submit', function(event){
 
 
 
-// $(document).on('mousemove', function(e){ 
-	
+// $(document).on('mousemove', function(e){
+
 //     shadowstring = '';
 
 //     dx = halfWidth - e.pageX;
 //     dy = halfHeight - e.pageY;
-//     dxy = Math.sqrt(dx*dx + dy*dy); 
+//     dxy = Math.sqrt(dx*dx + dy*dy);
 
 // 	coefX = dx/dxy;
 // 	coefY = dy/dxy;
@@ -84,11 +85,11 @@ $('#registration').on('submit', function(event){
 
 //     for(var i = 1; i < 200; i++){
 // 		if (i < gradEnd){
-// 			plus = i * coefX +'px ' + i * coefY + 'px rgb(' +  round(rStart + coefR * i) + ',' + 
-// 															   round(gStart + coefG * i) + ',' + 
+// 			plus = i * coefX +'px ' + i * coefY + 'px rgb(' +  round(rStart + coefR * i) + ',' +
+// 															   round(gStart + coefG * i) + ',' +
 // 															   round(bStart + coefB * i) + '), ';
 // 		} else{
-// 			plus = i * coefX +'px ' + i * coefY + 'px rgb('+rEnd+','+gEnd+','+bEnd+'), ';	
+// 			plus = i * coefX +'px ' + i * coefY + 'px rgb('+rEnd+','+gEnd+','+bEnd+'), ';
 // 		}
 // 		shadowstring += plus;
 // 	}

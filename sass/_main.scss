@@ -1,35 +1,193 @@
+
 @import "compass/css3/border-radius";
+
+// body{
+//   -webkit-font-smoothing: antialiased;
+// }
+
+html, body{
+  height: 100%;
+  min-height: 660px;
+  min-width: 360px;
+}
+section{
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
 
 #About {
   background-color: #c9e7e9;
-  position: relative;
 }
 
 #Announcement {
   background: url("../images/pattern.png");
-  min-height: 100px;
+  min-height: 950px;
+}
+
+::-webkit-input-placeholder {
+   color: #8892a8;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #8892a8;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #8892a8;
+}
+
+:-ms-input-placeholder {
+   color: #8892a8;
 }
 
 #Registration {
+ &.success{
+  .mackbook{
+    .screen{
+      background-color: #6fc497;
+      form{
+        display: none;
+      }
+      .success-msg{
+        display: block;
+        text-align: center;
+        margin-top: 100px;
+        .cup{
+          background:  url("../images/cup.png");
+          height: 127px;
+          display: inline-block;
+          width: 132px;
+          margin-right: -28px;
+        }
+        .good{
+          margin: 15px 0 0 0;
+          font-family: 'kelson_sans_ruregular';
+          font-size: 18px;
+          line-height: 14px;
+          color: #fff;
+        }
+        .wait{
+          font-family: 'kelson_sans_ruregular';
+          font-size: 12px;
+          color: #a7e8c5;
+        }
+      }
+
+    }
+  }
+ }
  background-color: #b7c9d3;
+ .mackbook{
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 949px;
+  height: 503px;
+  background:  url("../images/macbook.png");
+  .screen{
+    position: absolute;
+    margin: auto;
+    left: 0;right: 0;
+    top: 23px;
+    width: 640px;
+    height: 407px;
+    background-color: #f77f82;
+
+    .success-msg{
+      display: none;
+    }
+
+    form{
+      position: absolute;
+      left: 0;right: 0;top: 0;bottom: 0;
+      margin: auto;
+      width: 230px;
+      height: 227px;
+      input{
+        margin-bottom: 9px;
+        height: 27px;
+        background-color: #fcddde;
+        color: #1d3556;
+      }
+      select {
+          font-size: 15px;
+          border: 1px solid lightblue;
+          border-radius: 0;
+          color: #1d3556;
+          padding: 4px;
+          width: 100%;
+          -webkit-appearance: none;
+          background:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='50px' height='50px'><polyline points='46.139,15.518 25.166,36.49 4.193,15.519'/></svg>") right no-repeat;
+          background-color: #fcddde;
+          background-transparency: 0.5;
+          background-position: right 10px top 4px;
+          background-size: 18px 18px;
+          margin: 0 0 61px 0;
+      }
+      .btn-submit{
+        width: 100%;
+        margin: 0;
+        height: 27px;
+        background-color: #e84246;
+        color: white;
+        border: none;
+        border-bottom: 4px solid #c52a2e;
+        font-size: 15px;
+        font-family: $light-font-family;
+        letter-spacing: 1px;
+        line-height: 21px;
+        &:active{
+          margin-top: 1px;
+        }
+      }
+    }
+  }
+ }
 }
 
 #Map {
-  position: relative;
+  .map-slide-wrapper{
+    position: relative;
+    height: 100%;
+    padding-bottom: 39px;
+  }
 }
 
-.logo {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+.logo-wrapper{
+  position: absolute;
+  top: 0;left: 0;bottom: 0;right: 0;
+  margin: auto;
+  width: 375px;
+  height: 397px;
+  padding-top: 20px;
+  .logo {
+    position: absolute;
+  }
+  .logo-shadow{
+    position: absolute;
+    display: block;
+    width: 850px;
+    height: 750px;
+    left: 1px;
+    top: 42px;
+    background-image: url("../images/logo-shadow.png");
+  }
 }
+
 
 .about{
   padding-left: emCalc(38);
   line-height: 1.5;
+  text-transform: uppercase;
+  max-width: 540px;
 }
 
 .about-title {
+  font-family: $light-font-family;
   color: #ffffff;
   font-size: emCalc(39);
   font-weight: 100 !important;
@@ -38,7 +196,7 @@
 .about-description {
   color: #62979b;
   font-size: emCalc(18);
-  font-weight: bold !important;
+  font-weight: 500 !important;
 }
 
 .about-details {
@@ -52,10 +210,13 @@
   padding: emCalc(14);
   color: #fff;
   font-size: emCalc(11);
-  font-weight: 100 !important;
+  font-weight: 300 !important;
+  letter-spacing: 1px;
 }
 
 .nav_bars {
+  position: absolute;
+  bottom: 0;left: 0;right: 0;
   width: 71px;
   height: 48px;
   background:url('../images/nav_buttons.png');
@@ -66,7 +227,15 @@
     a {
       color: #fff;
       font-size: emCalc(11);
-      font-weight: 100 !important;
+      font-weight: 300 !important;
+      letter-spacing: 1.1px;
+      margin-right: -1.1px;
+      display: inline-block;
+      line-height: 48px;
+      height: 100%;
+      width: 100%;
+
+
     }
 }
 
@@ -78,23 +247,15 @@
   background-position: 0 -96px;
 }
 
-#fourth_nav_bar_holder {
-  z-index: 9999;
-  bottom: 0px;
-  position: absolute;
-  left: 50%
-}
 
 #fourth_nav_bar {
   height: 68px;
   background-position: 0 -144px;
   line-height: 88px;
+  bottom: 39px;
     a {
       color: #000;
     }
-
-  position: relative;
-  left: -50%;
 }
 
 #map_title {
@@ -104,7 +265,7 @@
 }
 
 #map {
-  min-height: 500px;
+  height: 100%;
   img {
     max-width: none;
   }
@@ -174,22 +335,23 @@
 
 footer {
   background-color: #ebe8b4;
-  position: relative;
   height: 39px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 
   p {
+    line-height: 39px;
     padding-left: emCalc(14);
+    font-size: emCalc(11);
     margin: 0;
-    padding-top: 11px;
+    font-weight: 500 !important;
     span {
-      font-weight: 100 !important;
+      font-weight: 300 !important;
     }
   }
   a {
-    position: absolute;
-    right: 0;
-    top: 0;
-    // float: right;
+    float: right;
   }
 
 }
@@ -200,6 +362,9 @@ footer {
   color: #fff;
   font-size: emCalc(85);
   text-align: center;
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+  margin-bottom: 5px;
 }
 
 #time_left_label {
@@ -207,6 +372,8 @@ footer {
   color: #c02f34;
   text-align: center;
   font-weight: 100 !important;
+  margin-top: 21px;
+  margin-bottom: -6px;
 }
 
 .blue_text {
@@ -218,7 +385,7 @@ footer {
 
 #announcement_highlight {
   color: #fff;
-  font-weight: 100;
+  font-family: $light-font-family;
   text-align: center;
   font-size: emCalc(30);
   letter-spacing: 2px;
@@ -239,6 +406,8 @@ footer {
     span {
       text-align: center;
       display: inline-block;
+      font-weight: 300px;
+      -webkit-font-smoothing: antialiased;
       img {
         vertical-align: middle;
         margin: 0 14px 0 6px;
