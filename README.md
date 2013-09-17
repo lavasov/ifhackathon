@@ -1,4 +1,4 @@
-ifhakathon
+ifhackathon
 ==========
-Website for the First Ivano-Frankivsk hakathon
+Website for the First Ivano-Frankivsk hackathon
 ----------------------------------------------
